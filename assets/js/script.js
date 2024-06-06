@@ -22,3 +22,5 @@ async function test(){
     const result = await db.query('SELECT * FROM gamescores'); 
     console.log(result.rows[0]);
 }
+
+import "tailwindcss/tailwind.css"
