@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body, button {
+    color: blue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}

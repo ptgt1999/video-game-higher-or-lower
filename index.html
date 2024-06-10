@@ -4,53 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Game Higher or Lower</title>
-    <link  href="assets\css\tailwind.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link  href="assets\css\style.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
         @layer utilities {
           .content-auto {
             content-visibility: auto;
           }
         }
-      </style>
+      </style> -->
 </head>
 <header>
     <h1 class="text-xl font-bold underline"> Higher or Lower: Video Game Edition</h1>
-    <h1>Highscore</h1>
-    <h1>Current Score</h1>
+    <h2>Highscore</h2>
 </header>
 <body>
+  <div class="wrapper">
+    <h1>Higher or Lower Game</h1>
+
+    <div class="game-view">
+      <div class="number" id="current">0</div>
+
+      <div class="button-group">
+        <div>
+          <button class="btn" id="higher" data-value="higher">&#8613;</button>
+          <p>Higher</p>
+        </div>
+        <div>
+          <button class="btn" id="lower" data-value="lower">&#8615;</button>
+          <p>Lower</p>
+        </div>
+      </div>
+    </div>
+
+    <h4>SCORE</h4>
+    <div class="score" id="score">0</div>
+
+    <h3 class="result hide" id="result">Correct</h3>
+
+  </div>  
+  <!-- <button  type="button" onclick="generateRandom()">Start Game</button>
+  <p id="rand"> </p>
+  
+  <br>
+  <br>
+
+  <button type="button" onclick="higher()">Higher</button>
+  <button type="button" onclick="lower()">Lower</button> -->
+
+  <script src="assets\js\script.js"></script>
+
    <!-- <div class="card">
         <div class="Card-body">
   <h4><div class="card-title">VS</div></h4> -->
 
   <!--To hold everything-->
-  <div>
-    <!--<img src="assets\images\arcade-carpet-blurred.jpg">-->
-    <!--holds left side-->
+  <!-- <div>
+    <img src="assets\images\arcade-carpet-blurred.jpg"> -->
+    <!-- holds left side -->
     <div>
-        <!--holds image 1-->
+        <!-- holds image 1 -->
         <div>
             <img></img>
         </div>
-     <!--Holds rating-->
+     <!-- Holds rating -->
      <div>
          <p>Rating</p>
        </div>
     </div>
-    <!--Holds right side-->
+    <!-- Holds right side -->
     <div>
-        <!--Holds image 2-->
+        <!-- Holds image 2 -->
         <div>
             <img>
         </div>
-        <!-- Holds buttons-->
-        <div>
-            <button> Higher</button>
-            <button> Lower </button>
-        </div>
+        <!-- Holds buttons -->
     </div>
   </div>
 </div> 
-</div>
+</div> 
 </body>
