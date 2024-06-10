@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Game Higher or Lower</title>
+    <!--Custom CSS-->
+    <link href="assets\css\style.css" rel="stylesheet">
+    <!--TailWind CSS-->
     <link  href="assets\css\tailwind.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
@@ -13,11 +16,20 @@
           }
         }
       </style>
+
+    <!--Custom Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    
+
 </head>
-<header>
-    <h1 class="text-xl font-bold underline"> Higher or Lower: Video Game Edition</h1>
-    <h1>Highscore</h1>
-    <h1>Current Score</h1>
+<header class="h-14 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500">
+    <h1 class="text-6xl text-white tiny5-regular text-center"> Higher or Lower?</h1>
+    <div>
+      <h1 class=" text-center text-white font-extrabold">Highscore</h1>
+      <h1 class=" text-center text-white font-extrabold">Current Score</h1>
+    </div>
 </header>
 <body>
    <!-- <div class="card">
@@ -26,7 +38,6 @@
 
   <!--To hold everything-->
   <div>
-    <!--<img src="assets\images\arcade-carpet-blurred.jpg">-->
     <!--holds left side-->
     <div>
         <!--holds image 1-->
@@ -54,3 +65,4 @@
 </div> 
 </div>
 </body>
+<style>

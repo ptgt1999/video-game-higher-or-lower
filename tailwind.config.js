@@ -6,6 +6,10 @@ module.exports = {
     '*/ *.index.html'
   ],
   theme: {
+    extend: {
+      backgroundImage: {
+        'arcade': "src(assets/images/arcade-carpet-blurred.jpg)"
+      },
     screens: {
       sm: '480px',
       md: '768px',
@@ -27,10 +31,6 @@ module.exports = {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
-    extend: {
-      backgroundImage: {
-        'arcade': "src(assets/images/arcade-carpet-blurred.jpg)"
-      },
       spacing: {
         '128': '32rem',
         '144': '36rem',
