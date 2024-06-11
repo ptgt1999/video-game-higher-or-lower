@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Game Higher or Lower</title>
+    <!--Custom CSS-->
+    <link href="assets\css\style.css" rel="stylesheet">
+    <!--Custom Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <!--Tailwind CSS-->
     <link  href="assets\css\tailwind.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
@@ -14,31 +21,35 @@
         }
       </style>
 </head>
-<header>
-    <h1 class="text-xl font-bold underline"> Higher or Lower: Video Game Edition</h1>
-    <h1>Highscore</h1>
-    <h1>Current Score</h1>
+<header class="bg-gradient-to-r from-sky-500 via-yellow-500 to-pink-500 h-20" >
+    <h1 class="text-7xl text-white text-center tiny5-regular"> Higher or Lower</h1>
+    <div class="tiny5-regular text-white text-center py-2 inline-block w-full ">
+      <h1 class= "w-1/2 inline">Highscore</h1>
+      <h1 class="w-1/2 inline">Current Score</h1>
+    </div>
 </header>
 <body>
   <div class="wrapper">
-    <h1>Higher or Lower Game</h1>
+    <!--<h1>Higher or Lower Game</h1>
 
     <div class="game-view">
-      <div class="number" id="current">0</div>
+      <div class="number text-white tiny5-regular text-center" id="current">0</div>-->
 
       <div class="button-group">
         <div>
           <button class="btn" id="higher" data-value="higher">&#8613;</button>
-          <p>Higher</p>
+          <p class="tiny5-regular text-white h-14 bg-gradient-to-r from-amber-500 to-red-600 text-center">Higher</p>
         </div>
         <div>
           <button class="btn" id="lower" data-value="lower">&#8615;</button>
-          <p>Lower</p>
+          <p class="tiny5-regular text-white h-14 bg-gradient-to-r from from-cyan-500 to-blue-500 text-center">Lower</p>
         </div>
       </div>
     </div>
 
-    <h4>SCORE</h4>
+    <!--Which score is the correct score tracker??-->
+    
+    <!--<h4 class="tiny5-regular text-white text-center">SCORE</h4>-->
     <div class="score" id="score">0</div>
 
     <h3 class="result hide" id="result">Correct</h3>
