@@ -23,34 +23,34 @@
 </head>
 <header class="bg-gradient-to-r from-sky-500 via-yellow-500 to-pink-500 h-20" >
     <h1 class="text-7xl text-white text-center tiny5-regular"> Higher or Lower</h1>
-    <div class="tiny5-regular text-white text-center py-2 inline-block w-full ">
+    <!--<div class="tiny5-regular text-white text-center py-2 inline-block w-full ">
       <h1 class= "w-1/2 inline">Highscore</h1>
-      <h1 class="w-1/2 inline">Current Score</h1>
+      <h1 class="w-1/2 inline">Current Score</h1>-->
     </div>
 </header>
 <body>
   <div class="wrapper">
     <br>
+    <div class="inline-block w-full tiny5-regular text-white">
+      <h4 class="text-3xl" >SCORE</h4>
+      <div class="score w-1/2 inline" id="score">0</div>
+      <h3 class=" w-1/2 inline result hide" id="result">Correct</h3>
+    </div>
+
     <div class="game-view">
       <div class="number text-white tiny5-regular text-center" id="current">0</div>
 
       <div class="button-group">
         <div>
-          <button class="btn" id="higher" data-value="higher">&#8613;</button>
+          <button class="btn text-white" id="higher" data-value="higher">&#8613;</button>
           <p class="tiny5-regular text-white h-14 bg-gradient-to-r from-amber-500 to-red-600 text-center">Higher</p>
         </div>
         <div>
-          <button class="btn" id="lower" data-value="lower">&#8615;</button>
+          <button class="btn text-white" id="lower" data-value="lower">&#8615;</button>
           <p class="tiny5-regular text-white h-14 bg-gradient-to-r from from-cyan-500 to-blue-500 text-center">Lower</p>
         </div>
       </div>
     </div>
-    
-    <h4 class="tiny5-regular text-white text-center">SCORE</h4>
-    <div class="score" id="score">0</div>
-
-    <h3 class="result hide" id="result">Correct</h3>
-
   </div>  
 
   <script src="assets\js\script.js"></script>
