@@ -1,16 +1,6 @@
-body{
-    background-image: url("../images/arcade-carpet-blurred.jpg");
-    margin: 10%;
-}
 /* Custom Font*/
 .tiny5-regular {
     font-family: "Tiny5", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-.button-group{
-    float: right;
-    border-left: solid, 2px;
-    border-color: white;
   }

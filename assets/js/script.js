@@ -1,13 +1,34 @@
+function getGamesScore() {
+  const requestUrl = 'http://localhost:3001/api/games';
+  fetch(requestUrl)
+  .then(function(response){
+    return response.json();
+  })
+.then(function(data){
+  const randomGame1=data[Math.floor(Math.random()* 15)]
+  console.log("randomGame1", randomGame1.games)
+  const randomGame2=data[Math.floor(Math.random()* 15)+15]
+  console.log("randomGame2", randomGame2.games)
+  current_elem.innerText = randomGame2.games +" VS "+ randomGame1.games;
+
+  }
+  )
+}
+
+// getGamesScore();
+
+
+
 const current_elem = document.getElementById("current");
 const btns = document.getElementsByClassName("btn");
 const result_elem = document.getElementById("result");
 const score_elem = document.getElementById("score");
 
-let last_number = 0;
-let current_number = getRandomInt();
-let score = 0;
+let randomGame1 = 0;
+let randomGame2 = getGamesScore();
+let score = 0; 
 
-current_elem.innerText = current_number;
+// current_elem.innerText = randomGame2;
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
@@ -16,15 +37,15 @@ for (let i = 0; i < btns.length; i++) {
 }
 
 function PlayGame (choice) {
-  last_number = current_number;
-  current_number = getRandomInt();
-  current_elem.innerText = current_number;
+  randomGame2 = randomGame1;
+  randomGame1 = getGamesScore();
+  current_elem.innerText = randomGame1;
 
   let comparison;
 
-  if (last_number < current_number) {
+  if (randomGame2.score < randomGame1.score) {
     comparison = "higher";
-  } else if (last_number > current_number) {
+  } else if (randomGame2.score > randomGame1.score) {
     comparison = "lower";
   } else {
     comparison = "match";
@@ -65,6 +86,6 @@ function PlayGame (choice) {
 
 }
 
-function getRandomInt() {
-  return Math.floor(Math.random() * 20);
-}
+// function getRandomInt() {
+//   return Math.floor(Math.random() * 20);
+// }

@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// POST create a new user
+// POST create a new game
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create({
