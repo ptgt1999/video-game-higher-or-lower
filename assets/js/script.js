@@ -1,10 +1,10 @@
 function getGamesScore() {
-  const requestUrl = 'http://localhost:3001/api/games';
-  fetch(requestUrl)
+  fetch("/api/games")
   .then(function(response){
     return response.json();
   })
 .then(function(data){
+  console.log(data)
   const randomGame1=data[Math.floor(Math.random()* 15)]
   console.log("randomGame1", randomGame1.games)
   const randomGame2=data[Math.floor(Math.random()* 15)+15]

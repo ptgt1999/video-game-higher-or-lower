@@ -1,8 +1,12 @@
 const router = require('express').Router();
 const User = require('../../Models/User.js');
+const gameData = require("../../seeds/gamedata.js");
 
 // GET a Game
 router.get('/', async (req, res) => {
+  res.json(gameData);
+  // don't read js file, get info from database
+  return;
   try {
     const userData = await User.findAll();
     if (!userData) {
