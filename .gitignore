@@ -1,1 +1,5 @@
 node_modules/
+
+DB_NAME='higherlower'
+DB_USER='postgres'
+DB_PASSWORD='Woody0522'
