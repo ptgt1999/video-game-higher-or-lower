@@ -2,6 +2,6 @@ const router = require('express').Router();
 
 const apiRoutes = require('./HigherLowerRoutes.js');
 
-router.use('/games', apiRoutes);
+router.use('/gamedata', apiRoutes);
 
 module.exports = router;
