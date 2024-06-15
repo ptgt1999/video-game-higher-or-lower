@@ -27,7 +27,7 @@ function getGamesScore() {
   console.log("randomGame2", randomGame2.game);
   Game1Score = parseInt(randomGame1.score);
   Game2Score = parseInt(randomGame2.score);
-  current_elem.innerText = randomGame2.game +" VS "+ randomGame1.game;
+  current_elem.innerText = randomGame1.game +" VS "+ randomGame2.game;
 
   }
   )
