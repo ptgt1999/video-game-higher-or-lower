@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const User = require('../../models/User.js');
-const gameData = require("../../seeds/gamedata.js");
+const gameData = require("../../seeds/gameChoiceData.json");
 
 // GET a Game
 router.get('/', async (req, res) => {

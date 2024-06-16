@@ -8,7 +8,7 @@ var game2Index;
 //Setting Gamescore
 function getGamesScore() {
   //TO DO: Create NEW API End Point that uses sequalize and returns JSON
-  fetch("../seeds/gamedata.json")
+  fetch("../../seeds/gameChoiceData.json")
   .then(function(response){
     console.log(response);
     return response.json();
