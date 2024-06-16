@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS HigherLower;
+DROP DATABASE IF EXISTS higherlower;
 
-CREATE DATABASE HigherLower;
+CREATE DATABASE higherlower;

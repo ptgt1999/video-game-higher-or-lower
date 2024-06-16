@@ -22,6 +22,8 @@ GameChoice.init(
     sequelize,
     timestamps: true,
     underscored: true,
+    freezeTableName: true,
+    tableName: "gamechoice",
   }
 );
 
