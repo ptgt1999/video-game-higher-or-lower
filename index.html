@@ -31,18 +31,15 @@
 <body class= "bg-cover" style= "background-image: url(assets/images/arcade-carpet-blurred.jpg)">
   <div class="wrapper">
     <br>
-    <div class="inline-block w-full tiny5-regular text-white">
-      <h4 class="text-3xl" >SCORE</h4>
-      <div class="score w-1/2 inline" id="score">0</div>
-      <h3 class=" w-1/2 inline result hide" id="result">Correct</h3>
+    <div class="inline-block w-full tiny5-regular text-white p-8 space-y-4">
+      <h4 class="text-5xl" >SCORE</h4>
+      <div class="score w-1/2 text-5xl inline" id="score">0</div>
+      <h3 class=" w-1/2 inline result hide text-5xl" id="result">Correct</h3>
     </div>
-
-
-    
     
     <!--Game Stuff -->
     <div class="game-view">
-      <div class="number text-white tiny5-regular text-center" id="current">0</div>
+      <div class="number text-white text-6xl tiny5-regular text-center mt-8 space-x-5" id="current"></div>
       <!--Image Holder-->
     <div class="image-holder"> 
       <!--Image 1-->
@@ -56,12 +53,12 @@
       
     </div>
     
-      <div class="button-group">
+      <div class="button-group grid gap-4 mt-[100] pt-[150px] w-96 ml-[750px] p-8 space-y-4">
         <div>
-          <p class="btn tiny5-regular text-white h-14 bg-gradient-to-r from-amber-500 to-red-600 text-center" data-value="higher">Higher</p>
+          <p class="btn tiny5-regular text-white text-5xl h-14 bg-gradient-to-r from-amber-500 to-red-600 text-center" data-value="higher">Higher</p>
         </div>
         <div>
-          <p class="btn tiny5-regular text-white h-14 bg-gradient-to-r from from-cyan-500 to-blue-500 text-center" data-value="lower">Lower</p>
+          <p class="btn tiny5-regular text-white h-14 text-5xl bg-gradient-to-r from from-cyan-500 to-blue-500 text-center" data-value="lower">Lower</p>
         </div>
       </div>
     </div>
