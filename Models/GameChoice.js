@@ -5,14 +5,9 @@ class GameChoice extends Model {}
 
 GameChoice.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    name: {
+    game: {
       type: DataTypes.STRING,
+      primaryKey: true,
     },
     score: {
       type: DataTypes.INTEGER,
@@ -20,11 +15,12 @@ GameChoice.init(
   },
   {
     sequelize,
-    timestamps: true,
+    timestamps: false,
     underscored: true,
     freezeTableName: true,
-    tableName: 'game_choice',
+    tableName: 'gamechoice',
   }
 );
 
 module.exports = GameChoice;
+ 
