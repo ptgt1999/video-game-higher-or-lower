@@ -36,7 +36,7 @@ sequelize.authenticate()
 
 
 // turn on connection to db and server
-/*sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
-});*/
-app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
+});
+//app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
