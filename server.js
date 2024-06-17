@@ -18,6 +18,22 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 app.use(express.static(__dirname));
 
+sequelize.authenticate()
+  .then(function () {
+    console.log("CONNECTED!");
+  })
+  .catch(function (err) {
+    console.log("SOMETHING DONE GOOFED: " + err);
+  });
+//turn on connection to db and server
+  sequelize.sync({ force: false }).then(() => {
+   app.listen(PORT, () => console.log('Now listening'));
+ });
+
+
+//app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
+
+
 
 // turn on connection to db and server
 /*sequelize.sync({ force: false }).then(() => {
