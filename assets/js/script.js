@@ -54,8 +54,12 @@ const current_elem = document.getElementById("current");
 const btns = document.getElementsByClassName("btn");
 const result_elem = document.getElementById("result");
 const score_elem = document.getElementById("score");
+const formBtn = document.getElementById("formBtn");
 
 let score = 0; 
+
+//Button to link to form
+formBtn.addEventListener("click",fetchForm);
 
 //Assigning play game funtion
 for (let i = 0; i < btns.length; i++) {
@@ -135,4 +139,10 @@ function shuffleGames(){
     current_elem.innerText = randomGame1.game+" VS " +randomGame2.game ;
     }
   )
+}
+
+//API to fetch form page
+function fetchForm(){
+  window.location.href=window.location.href+"gameform";
+  console.log(window.location.href);
 }
