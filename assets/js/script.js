@@ -119,7 +119,7 @@ function shuffleGames(){
   randomGame1 = randomGame2;
   Game1Score = Game2Score;
   //TO DO: Set Game 1 Image = Game 2 Image
-  fetch("../seeds/gamedata.json")
+  fetch("../seeds/gameChoiceData.json")
   .then(function(response){
     return response.json();
 
