@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const User = require('../../models/User.js');
 const gameData = require("../../seeds/gameChoiceData.json");
+const gameChoice = require('../../Models/GameChoice.js');
+
 
 // GET a Game
 router.get('/', async (req, res) => {
@@ -23,6 +25,8 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
   try {
   console.log(req.body);
+  var jsonPost = json.parse(req.body);
+  gameChoice.create(`{ name: '${jsonPost.gameName}', score: '${jsonPost.gameScore}'}`);
     res.status(204).end();
   } catch (err) {
     res.status(400).json(err);

@@ -23,9 +23,6 @@
 </head>
 <header class="bg-gradient-to-r from-sky-500 via-yellow-500 to-pink-500 h-20" >
     <h1 class="text-7xl text-white text-center tiny5-regular"> Higher or Lower</h1>
-    <!--<div class="tiny5-regular text-white text-center py-2 inline-block w-full ">
-      <h1 class= "w-1/2 inline">Highscore</h1>
-      <h1 class="w-1/2 inline">Current Score</h1>-->
     </div>
 </header>
 <body class= "bg-cover" style= "background-image: url(assets/images/arcade-carpet-blurred.jpg)">
@@ -53,7 +50,7 @@
       
     </div>
     
-      <div class="button-group grid gap-4 mt-[100] pt-[150px] w-96 ml-[750px] p-8 space-y-4">
+      <div class="button-group flex flex-col space-y-4 w-1/2">
         <div>
           <p class="btn tiny5-regular text-white text-5xl h-14 bg-gradient-to-r from-amber-500 to-red-600 text-center" data-value="higher">Higher</p>
         </div>
@@ -64,6 +61,11 @@
     </div>
   </div>  
 
+  <!-- Add New Game-->
+  <div class="">
+    <button class="tiny5-regular text-white" id="formBtn"> Have a new game not on the list? Add it here! </button>
+  </div>
+
   <script src="assets\js\script.js"></script>
 </body>
-<style>
+</html>

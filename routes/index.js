@@ -9,4 +9,8 @@ router.get("/", function(req,res){
     res.sendFile(path.join(__dirname, "../index.html"));
 });
 
+router.get("/gameForm",function(req,res){
+    res.sendFile(path.join(__dirname,"../form.html"));
+});
+
 module.exports = router;

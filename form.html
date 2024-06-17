@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New GameV</title>
+    <!--Custom CSS-->
+    <link href="assets\css\style.css" rel="stylesheet">
+    <!--Custom Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <!--Tailwind CSS-->
+    <link  href="assets\css\tailwind.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<header class="bg-gradient-to-r from-sky-500 via-yellow-500 to-pink-500 h-20 mb-8" >
+    <h1 class="text-7xl text-white text-center tiny5-regular"> Add to Our Database</h1>
+</header>
+<body class= "bg-cover" style= "background-image: url(assets/images/arcade-carpet-blurred.jpg)"></body>
+
+    <form class="text-white text-4xl tiny5-regular bg-blue-950 bg-opacity-75 text-center w-1/2 ml-[330px] p-8 space-y-4">
+        <label for="gameName"> Game Name:</label><br>
+        <input type="text" class="text-black tiny5-regular text-3xl p-2" id="gameName"><br>
+        <label for="gameScore"> Rating: </label><br>
+        <input type="text" class="text-black tiny5-regular text-3xl p-2" id="gameScore"><br>
+        <input type = "submit" class="bg-gradient-to-r from from-red-500 to-blue-500 pl-8 pr-8" id="submit" value="Submit">
+    </form>
+</body>
+
+<script src="assets\js\formScript.js"></script>
+</html>
