@@ -104,15 +104,6 @@ function PlayGame (choice) {
     result_elem.classList.remove("hide");
     shuffleGames();
 
-  } else {
-    score = 0;
-    score_elem.innerText = score;
-
-    result_elem.innerText = "Incorrect";
-    result_elem.classList.add("incorrect");
-    result_elem.classList.remove("hide");
-
-    getGamesScore();
   }
 
 
